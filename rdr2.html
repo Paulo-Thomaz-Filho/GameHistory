@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game History | Red Dead Redemption 2</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="rdr2-theme">
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gamepad"></i> GAME<span>HISTORY</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="rdr2.html" class="active">Red Dead 2</a></li>
+                <li><a href="tlou.html">The Last of Us</a></li>
+                <li><a href="witcher.html">The Witcher</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <!-- Elemento de áudio (invisível) -->
+            <audio id="bg-audio" src="sound/OhMyLovely.mp3" loop></audio>
+
+            <!-- Botão de controle no Header/Navbar -->
+            <button id="music-toggle" class="music-btn" title="Alternar Música">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero da Página do Jogo -->
+        <section class="game-hero rdr2-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="badge red">1899 - América do Norte</span>
+                <h1>Red Dead Redemption 2</h1>
+                <p>O declínio dos fora-da-lei e a trajetória de Arthur Morgan na Gangue Van der Linde.</p>
+            </div>
+        </section>
+
+        <!-- Sinopse do Jogo -->
+        <section class="synopsis-section">
+            <div class="container">
+                <div class="synopsis-box">
+                    <h2> Sinopse do Jogo</h2>
+
+                    <div class="trailer-container">
+                        <video controls poster="img/rdr2-cover.jpg">
+                            <source src="mp4/rdr2.mp4" type="video/mp4">
+                            Seu navegador não suporta a exibição deste vídeo.
+                        </video>
+                    </div><br>
+
+                    <p>
+                        Ambientado no fim da era do Velho Oeste em 1899, <strong>Red Dead Redemption 2</strong> acompanha a história de 
+                        <strong>Arthur Morgan</strong>, um membro sênior e leal da gangue liderada por <strong>Dutch van der Linde</strong>. 
+                        Após um assalto dar terrivelmente errado na cidade de Blackwater, o bando é forçado a fugir de federais e dos melhores 
+                        caçadores de recompensas do país. 
+                    </p>
+                    <p>
+                        Enquanto as divisões internas se aprofundam e a modernização da América ameaça extinguir o modo de vida dos fora-da-lei, 
+                        Arthur é confrontado com os seus próprios ideais e precisa escolher entre a lealdade ao homem que o criou e a busca pela sua própria redenção.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção da Linha do Tempo -->
+        <section class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">Linha do Tempo dos Acontecimentos</h2>
+
+                <div class="timeline">
+
+                    <!-- Evento 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Maio de 1899</span>
+                            <h3>O Assalto Fracassado em Blackwater</h3>
+                            <p>Após um assalto a balsa dar terrivelmente errado, a gangue Van der Linde é forçada a fugir para as montanhas geladas de Ambarino sob uma forte intertempérie.</p>
+                        </div>
+                    </div>
+
+                    <!-- Evento 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Início de 1899</span>
+                            <h3>Acampamento em Horseshoe Overlook</h3>
+                            <p>A gangue estabelece base perto da cidade de Valentine. Arthur começa a coletar dívidas para Leopold Strauss e descobre que a lei (Pinkertons) está se aproximando.</p>
+                        </div>
+                    </div>
+
+                    <!-- Evento 3 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Meados de 1899</span>
+                            <h3>A Rvalidade dos Gray e Braithewaite</h3>
+                            <p>Em Clemens Point, a gangue tenta jogar duas famílias tradicionais ricas uma contra a outra em Rhodes, terminando no sequestro do pequeno Jack Marston.</p>
+                        </div>
+                    </div>
+
+                    <!-- Evento 4 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Setembro de 1899</span>
+                            <h3>O Desastre do Banco de Saint Denis</h3>
+                            <p>Um assalto ousado termina em tragédia com mortes cruciais na gangue. Os sobreviventes naufragam e vão parar na ilha de Guarma.</p>
+                        </div>
+                    </div>
+
+                    <!-- Evento 5 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Final de 1899</span>
+                            <h3>A Redenção de Arthur Morgan</h3>
+                            <p>Com a saúde debilitada e vendo a paranoia de Dutch, Arthur decide garantir que John Marston e sua família consigam escapar do inevitável fim da gangue.</p>
+                        </div>
+                    </div>
+
+                    <!-- Evento 6 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">1907 (Epílogo)</span>
+                            <h3>O Novo Começo de John Marston</h3>
+                            <p>Anos mais tarde, John busca construir uma vida honesta como fazendeiro em Beecher's Hope e acerta as contas com o passado.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <span>&copy; 2026 Game History. Todos os direitos reservados ao grupo de desenvolvimento.</span>
+        </div>
+    </footer>
+
+    <script src="js/audio.js"></script>
+</body>
+</html>

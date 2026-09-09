@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game History | Contato</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gamepad"></i> GAME<span>HISTORY</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="rdr2.html">Red Dead 2</a></li>
+                <li><a href="tlou.html">The Last of Us</a></li>
+                <li><a href="witcher.html">The Witcher</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+
+            <!-- Elemento de áudio (invisível) -->
+            <audio id="bg-audio" src="sound/zephira.mp3" loop></audio>
+
+            <!-- Botão de controle no Header/Navbar -->
+            <button id="music-toggle" class="music-btn" title="Alternar Música">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper">
+                
+                <!-- Informações Laterais -->
+                <div class="contact-info">
+                    <h2>Entre em Contato</h2>
+                    <p>Tem alguma sugestão de jogo para adicionarmos às linhas do tempo ou encontrou algum erro no conteúdo? Mande sua mensagem!</p>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-users"></i>
+                        <div>
+                            <h4>Projeto Acadêmico</h4>
+                            <p>Desenvolvido por Felipe, Murilo e Paulo</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-code"></i>
+                        <div>
+                            <h4>Tecnologias</h4>
+                            <p>HTML5, CSS3 & JavaScript Vanilla</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <form id="contact-form" class="contact-form">
+                    <h3>Enviar Mensagem</h3>
+
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" required placeholder="Seu nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" required placeholder="seu.email@exemplo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" required>
+                            <option value="" disabled selected>Selecione um assunto</option>
+                            <option value="sugestao">Sugestão de Jogo</option>
+                            <option value="correcao">Correção de Conteúdo</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    <div id="form-feedback" class="form-feedback"></div>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <span>&copy; 2026 Game History. Todos os direitos reservados ao grupo de desenvolvimento.</span>
+        </div>
+    </footer>
+
+    <script src="js/contatos.js"></script>
+    <script src="js/audio.js"></script>
+</body>
+</html>

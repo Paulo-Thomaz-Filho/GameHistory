@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game History | The Last of Us</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="tlou-theme">
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gamepad"></i> GAME<span>HISTORY</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="rdr2.html">Red Dead 2</a></li>
+                <li><a href="tlou.html" class="active">The Last of Us</a></li>
+                <li><a href="witcher.html">The Witcher</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <!-- Elemento de áudio (invisível) -->
+            <audio id="bg-audio" src="sound/TheLastofUs.mp3" loop></audio>
+
+            <!-- Botão de controle no Header/Navbar -->
+            <button id="music-toggle" class="music-btn" title="Alternar Música">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero da Página do Jogo -->
+        <section class="game-hero tlou-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="badge green">2013 - 2039</span>
+                <h1>The Last of Us Part I & II</h1>
+                <p>Uma jornada crua de sobrevivência, laços afetivos, perda e as consequências da vingança.</p>
+            </div>
+        </section>
+
+        <!-- Sinopse Inicial -->
+        <section class="synopsis-section">
+            <div class="container">
+                <div class="synopsis-box">
+                    <h2><i class="fa-solid fa-book-open"></i> Sinopse da Franquia</h2>
+                                        <div class="trailer-container">
+                        <video controls poster="img/tlou-cover.jpg">
+                            <source src="mp4/tlou.mp4" type="video/mp4">
+                            Seu navegador não suporta a exibição deste vídeo.
+                        </video>
+                    </div><br>
+                    <p>
+                        Vinte anos após uma infecção fúngica por <em>Cordyceps</em> devastar a civilização moderna, os sobreviventes vivem em zonas de quarentena opressivas, acampamentos independentes ou vagam em facções brutais.
+                    </p>
+                    <p>
+                        A história acompanha a traumática jornada de <strong>Joel Miller</strong>, um contrabandista endurecido pelo luto, encarregado de escoltar <strong>Ellie</strong>, uma garota de 14 anos imune ao fungo, através de um país em ruínas. Anos mais tarde, o peso das escolhas do passado desencadeia um ciclo devastador de vingança entre Ellie e <strong>Abby Anderson</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção da Linha do Tempo -->
+        <section class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">Linha do Tempo dos Acontecimentos</h2>
+
+                <div class="timeline">
+
+                    <!-- Evento 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">26 de Setembro de 2013</span>
+                            <h3>O Dia do Surtor (Outbreak Day)</h3>
+                            <p>O fungo Cordyceps atinge massa crítica. Durante o caos da evacuação em Austin, Texas, a filha de Joel, Sarah, é tragicamente morta por um soldado.</p>
+                        </div>
+                    </div>
+
+                    <!-- Evento 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Verão de 2033</span>
+                            <h3>A Missão com Ellie</h3>
+                            <p>Em Boston, Marlene (líder dos Vaga-Lumes) contrata Joel e Tess para contrabandear Ellie fora da Zona de Quarentena, revelando que a jovem é imune à infecção.</p>
+                        </div>
+                    </div>
+
+                    <!-- Evento 3 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Primavera de 2034</span>
+                            <h3>O Hospital de Saint Mary</h3>
+                            <p>Ao descobrir que a cirurgia para criar a vacina mataria Ellie, Joel invade o hospital em Salt Lake City, elimina os Vaga-Lumes (incluindo o médico cirurgião) e mente para Ellie sobre o ocorrido.</p>
+                        </div>
+                    </div>
+
+                    <!-- Evento 4 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2038</span>
+                            <h3>A Revelação e o Distanciamento</h3>
+                            <p>Ellie viaja de volta ao hospital abandonado e descobre a verdade sobre o que Joel fez. A relação entre os dois se rompe quase por completo.</p>
+                        </div>
+                    </div>
+
+                    <!-- Evento 5 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Inverno de 2039</span>
+                            <h3>A Tragédia em Jackson</h3>
+                            <p>Abby Anderson, filha do médico morto por Joel, localiza o paradeiro dele perto da comunidade de Jackson e o executa na frente de Ellie.</p>
+                        </div>
+                    </div>
+
+                    <!-- Evento 6 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Primavera de 2039</span>
+                            <h3>Jornada em Seattle & Santa Barbara</h3>
+                            <p>Ellie parte em uma busca obsessiva por vingança em Seattle. A jornada culmina em graves perdas para ambos os lados e um confronto final doloroso nas praias de Santa Barbara.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <span>&copy; 2026 Game History. Todos os direitos reservados ao grupo de desenvolvimento.</span>
+        </div>
+    </footer>
+
+    <script src="js/audio.js"></script>
+</body>
+</html>

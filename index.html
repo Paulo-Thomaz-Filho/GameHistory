@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game History</title>
+    
+    <!-- CSS Principal e favicon -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Biblioteca de Ícones (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gamepad"></i> GAME <span>HISTORY</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="rdr2.html">Red Dead 2</a></li>
+                <li><a href="tlou.html">The Last of Us</a></li>
+                <li><a href="witcher.html">The Witcher</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <!-- Elemento de áudio (invisível) -->
+            <audio id="bg-audio" src="sound/zephira.mp3" loop></audio>
+
+            <!-- Botão de controle no Header/Navbar -->
+            <button id="music-toggle" class="music-btn" title="Alternar Música">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero / Banner Inicial com Logo ao Fundo -->
+        <section class="hero-section master-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>GAME <span>HISTORY</span></h1>
+                <p><strong>Explorando a cronologia e o enredo das maiores franquias dos videogames.</strong></p>
+                <a href="#sobre" class="btn-primary">Conheça o Projeto</a>
+            </div>
+        </section>
+
+        <!-- 2. Apresentação da Ideia do Site -->
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <h2>A Ideia do Projeto</h2>
+                <p>
+                    O <strong>Game History</strong> nasceu com o propósito de mapear a narrativa de jogos complexos e aclamados. 
+                    Muitas vezes, detalhes cruciais da história se perdem entre sequências e spin-offs. Nossa plataforma organiza 
+                    esses acontecimentos em linhas do tempo interativas para você acompanhar cada evento em ordem cronológica.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. Cards Informativos e Navegação para as Páginas dos Jogos -->
+        <section class="cards-section">
+            <div class="container">
+                <h2>Explore os Universos</h2>
+                <div class="cards-grid">
+
+                    <!-- Card Red Dead Redemption 2 -->
+                    <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="img/rdr2-cover.jpg" alt="Red Dead Redemption 2" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <span class="badge red">Faroeste</span>
+                            <h3>Red Dead Redemption 2</h3>
+                            <p>Acompanhe o declínio da guangue Van der Linde e o fim da era dos fora-da-lei na América de 1899.</p>
+                            <a href="rdr2.html" class="card-btn">Ver Linha do Tempo &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Card The Last of Us -->
+                    <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="img/tlou-cover.jpg" alt="The Last of Us" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <span class="badge green">Pós-Apocalíptico</span>
+                            <h3>The Last of Us Part I & II</h3>
+                            <p>Uma jornada visceral sobre sobrevivência, perda, laços afetivos e busca por vingança.</p>
+                            <a href="tlou.html" class="card-btn">Ver Linha do Tempo &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Card The Witcher -->
+                    <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="img/witcher-cover.jpg" alt="The Witcher 3" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <span class="badge yellow">Fantasia Medieval</span>
+                            <h3>The Witcher</h3>
+                            <p>A saga de Geralt de Rívia pelo Continente em busca de Ciri em meio a guerras e monstros.</p>
+                            <a href="witcher.html" class="card-btn">Ver Linha do Tempo &rarr;</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Meta Final do Site -->
+        <section class="goal-section">
+            <div class="container">
+                <h2>Nossa Meta Final</h2>
+                <div class="goal-content">
+                    <div class="goal-item">
+                        <i class="fa-solid fa-timeline"></i>
+                        <h3>Precisão Histórica</h3>
+                        <p>Documentar datas, locais e desdobramentos narrativa com fidelidade às obras originais.</p>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fa-solid fa-desktop"></i>
+                        <h3>Experiência Interativa</h3>
+                        <p>Tornar a leitura leve e dinâmica através de navegação visual fluida e responsiva.</p>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>Expansão de Catálogo</h3>
+                        <p>Servir como base para a inclusão futura de novas franquias e universos dos games.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Informações dos Membros do Projeto -->
+        <section class="team-section">
+            <div class="container">
+                <h2>Desenvolvedores</h2>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+                        <h3>Felipe da Silva Santos</h3>
+                    </div>
+                    <div class="team-card">
+                        <div class="avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+                        <h3>Murilo Babberg Souza</h3>
+                    </div>
+                    <div class="team-card">
+                        <div class="avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+                        <h3>Paulo Thomaz Filho</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <span>&copy; 2026 Game History. Todos os direitos reservados ao grupo de desenvolvimento.</span>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="js/audio.js"></script>
+</body>
+</html>
