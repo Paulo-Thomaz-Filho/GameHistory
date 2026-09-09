@@ -36,24 +36,34 @@ O **Game History** é um projeto web desenvolvido para organizar as narrativas d
 
 ```text
 GameHistory/
-├── css/
-│   └── style.css
-├── img/
-│   ├── favicon.png
-│   ├── hero-cover.jpg
-│   ├── rdr2-cover.jpg
-│   ├── tlou-cover.jpg
-│   └── witcher-cover.jpg
-├── js/
-│   ├── audio.js
-│   └── contatos.js
-├── mp4/
-│   └── rdr2-trailer.mp4
-├── sound/
-│   ├── OhMyLovely.mp3
-│   └── ZISO.mp3
-├── contato.html
-├── index.html
-├── rdr2.html
-├── tlou.html
-└── witcher.html
+│   contato.html
+│   index.html
+│   rdr2.html
+│   README.md
+│   tlou.html
+│   witcher.html
+│   
+├───css
+│       style.css
+│       
+├───img
+│       favicon.png
+│       hero-cover.jpg
+│       rdr2-cover.jpg
+│       tlou-cover.jpg
+│       witcher-cover.jpg
+│       
+├───js
+│       audio.js
+│       contatos.js
+│       
+├───mp4
+│       rdr2.mp4
+│       tlou.mp4
+│       witcher.mp4
+│       
+└───sound
+        GeraltOfRivia.mp3
+        OhMyLovely.mp3
+        TheLastofUs.mp3
+        zephira.mp3
