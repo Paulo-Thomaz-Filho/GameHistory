@@ -69,12 +69,12 @@ GameHistory/
         zephira.mp3
 
 ```
-##👨‍💻 Desenvolvedores
+## 👨‍💻 Desenvolvedores
 - Felipe da Silva Santos
 - Murilo Babberg Souza
 - Paulo Thomaz Filho
 
 ---
 
-##📜 Licença
+## 📜 Licença
 Este projeto é de caráter educacional. Todos os direitos reservados às respectivas criadoras e distribuidoras das franquias citadas (Rockstar Games, Naughty Dog e CD Projekt Red).
