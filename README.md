@@ -6,6 +6,10 @@ O **Game History** é um projeto web desenvolvido para organizar as narrativas d
 
 ---
 
+## Link para a pagina
+-- https://gamehistory.netlify.app
+
+---
 ## 🕹️ Universos Mapeados
 
 - 🤠 **Red Dead Redemption 2:** O declínio da gangue Van der Linde e a trajetória de Arthur Morgan em 1899.
