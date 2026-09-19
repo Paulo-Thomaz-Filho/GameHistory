@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game History | Login Admin</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gamepad"></i> GAME<span>HISTORY</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="rdr2.html">Red Dead 2</a></li>
+                <li><a href="tlou.html">The Last of Us</a></li>
+                <li><a href="witcher.html">The Witcher</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+            <!-- Elemento de áudio (invisível) -->
+            <audio id="bg-audio" src="../sound/zephira.mp3" loop></audio>
+
+            <!-- Botão de controle no Header/Navbar -->
+            <button id="music-toggle" class="music-btn" title="Alternar Música">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main de Login -->
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper" style="max-width: 500px; margin: 0 auto; grid-template-columns: 1fr;">
+                
+                <form id="login-form" class="contact-form">
+                    <h3><i class="fa-solid fa-lock" style="color: var(--accent-red);"></i> Acesso Restrito (Admin)</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">Entre com as credenciais de administrador para visualizar as mensagens recebidas.</p>
+
+                    <div class="form-group">
+                        <label for="username">Usuário</label>
+                        <input type="text" id="username" required placeholder="Digite o usuário admin">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" required placeholder="Digite a senha">
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">Entrar</button>
+                    <div id="login-feedback" class="form-feedback" style="text-align: center;"></div>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <span>&copy; 2026 Game History. Todos os direitos reservados ao grupo de desenvolvimento.</span>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/audio.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

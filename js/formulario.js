@@ -1,4 +1,3 @@
-// Lógica para capturar e salvar as mensagens de contato no localStorage
 document.addEventListener("DOMContentLoaded", () => {
     const contactForm = document.getElementById("contact-form");
     const formFeedback = document.getElementById("form-feedback");
@@ -7,13 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
         contactForm.addEventListener("submit", (e) => {
             e.preventDefault();
             
-            // 1. Captura os valores digitados nos inputs
             const nome = document.getElementById("name").value.trim();
             const email = document.getElementById("email").value.trim();
             const assunto = document.getElementById("subject").value;
             const mensagem = document.getElementById("message").value.trim();
             
-            // Validação básica
             if (!nome || !email || !assunto || !mensagem) {
                 if (formFeedback) {
                     formFeedback.className = "form-feedback error";
@@ -22,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            // 2. Cria o objeto com os dados da mensagem
             const novaMensagem = {
                 id: Date.now(),
                 nome: nome,
@@ -32,22 +28,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 dataHora: new Date().toLocaleString('pt-BR')
             };
 
-            // 3. Recupera as mensagens anteriores do localStorage (ou cria um array vazio)
             let mensagensSalvas = JSON.parse(localStorage.getItem("gameHistoryMensagens")) || [];
 
-            // 4. Adiciona a nova mensagem na lista
             mensagensSalvas.push(novaMensagem);
 
-            // 5. Salva de forma duradoura no localStorage
             localStorage.setItem("gameHistoryMensagens", JSON.stringify(mensagensSalvas));
 
-            // 6. Feedback visual e limpeza do formulário
             if (formFeedback) {
                 formFeedback.className = "form-feedback success";
                 formFeedback.textContent = "Mensagem enviada com sucesso! Agradecemos o feedback.";
             }
 
             alert("Mensagem enviada com sucesso! Agradecemos o feedback.");
+        
             contactForm.reset();
             
             setTimeout(() => {
