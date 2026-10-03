@@ -38,11 +38,18 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    flex: 1;
+}
+
 body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
@@ -789,6 +796,11 @@ body.witcher-theme {
     font-weight: 600;
     margin-bottom: 0.4rem;
     color: var(--text-primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
 }
 
 .form-group input,
