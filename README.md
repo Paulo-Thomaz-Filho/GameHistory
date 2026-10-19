@@ -74,9 +74,10 @@ GameHistory/
 
 ```
 ## 👨‍💻 Desenvolvedores
-- Felipe da Silva Santos
-- Murilo Babberg Souza
-- Paulo Thomaz Filho
+- Bruno Salazer | 47522038
+- Felipe da Silva Santos | 47121106
+- Murilo Babberg Souza | 
+- Paulo Thomaz Filho | 48360503
 
 ---
 
